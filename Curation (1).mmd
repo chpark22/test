@@ -29,8 +29,8 @@ graph TD
             T3[Time Threshold exceeded] --> K;
         end
 
-        K -- "Yes" --> KF[Promote as Keyframe];
-        K -- "No" --> K_Discard[Discard];
+        K -- "Clear" --> KF[Promote as Keyframe];
+        K -- "Non" --> K_Discard[Discard];
 
         %% ---- Final Outputs ----
         subgraph "Final Outputs"
