@@ -12,7 +12,7 @@ graph TD
         subgraph "Quality & Duplicate Checks"
             B --> Q1{Quality check};
             Q1 -- "Blurry / Low Info" --> D[Discard];
-            Q1 -- "OK" --> Q2{Duplicate Check};
+            Q1 -- "Clear" --> Q2{Duplicate Check};
             Q2 -- "Near Duplicate" --> D;
             Q2 -- "Unique" --> P[Preprocessed Frame];
         end
